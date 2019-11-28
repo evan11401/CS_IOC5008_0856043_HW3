@@ -54,8 +54,8 @@ if __name__ == "__main__":
     model.apply(weights_init_normal)
 
     # If specified we start from checkpoint
-    #opt.pretrained_weights="checkpoints/yolov3_color_pretrained_yolo_ckpt_29.pth"
-    opt.pretrained_weights="weights/yolov3.weights"
+    #opt.pretrained_weights = "checkpoints/yolov3_color_pretrained_yolo_ckpt_29.pth"
+    opt.pretrained_weights = "weights/yolov3.weights"
     
     if opt.pretrained_weights:
         print("use pretrian weight")

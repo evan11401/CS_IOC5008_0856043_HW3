@@ -91,8 +91,8 @@ if __name__ == "__main__":
 
     print("\nSaving images:")
     # Iterate through images and save plot of detections
-    flag=0
-    data=[None]*len(dataloader)
+    flag = 0
+    data = [None]*len(dataloader)
     for img_i, (path, detections) in enumerate(zip(imgs, img_detections)):
         num = int(path[len(opt.image_folder)+1:-4])
         print(num)
@@ -100,7 +100,7 @@ if __name__ == "__main__":
         oneimg["bbox"] = []
         oneimg["label"] = []
         oneimg["score"] = []
-        flag+=1        
+        flag += 1        
         img = np.array(Image.open(path))
         # Draw bounding boxes and labels of detections
         if detections is not None:
