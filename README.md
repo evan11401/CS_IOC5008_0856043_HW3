@@ -29,3 +29,5 @@ Run the detect.py, it will draw the predict result on the test images in data/cu
 
 ### (7)Print Json
 Run printjson.py and it will create the result that dump into the json form in data/custom/0856043_.json
+
+## See more details in the pdf file~
